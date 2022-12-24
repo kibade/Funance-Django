@@ -38,6 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'website',
+    'FurnaceData',
+    'django_crontab',
+]
+
+CRONJOBS = [
+    ('* * * * *', 'website.cron.hi')
 ]
 
 MIDDLEWARE = [
